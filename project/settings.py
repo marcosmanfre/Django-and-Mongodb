@@ -82,11 +82,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.sqlite3.djongo',
-            'NAME': BASE_DIR / 'projeto_django',
+            'ENGINE': 'djongo',
+            'NAME': 'projeto_django',
             'ENFORCE_SCHEMA': False,
             'CLIENT': {
-               
+              
 
             }  
         }
