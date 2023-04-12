@@ -26,3 +26,7 @@ jovem_1={
 
 
 collection.insert_one(jovem_1)
+
+for jovem in collection.find():
+    print(jovem.get('_id'))
+    print(jovem.get('nome'))
