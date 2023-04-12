@@ -1,6 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-import pymongo
+
+from .database import client
+
+
 
 
 def index(request):
@@ -23,4 +26,3 @@ jovem_1={
 
 
 collection.insert_one(jovem_1)
-
