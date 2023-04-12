@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'djangoapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,18 +80,6 @@ WSGI_APPLICATION = 'project.wsgi.application'
    #     'NAME': BASE_DIR / 'db.sqlite3',
     #}
 #}
-
-DATABASES = {
-        'default': {
-            'ENGINE': 'djongo',
-            'NAME': 'projeto_django',
-            'ENFORCE_SCHEMA': False,
-            'CLIENT': {
-              
-
-            }  
-        }
-}
 
 
 # Password validation
