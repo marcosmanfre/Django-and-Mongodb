@@ -15,6 +15,7 @@ def employeeApi(request,id=0):
         employees = Employees.objects.all()
         employees_serializer=EmployeeSerializer(employees,many=True)
         return JsonResponse(employees_serializer.data,safe=False)
+    
     elif request.method=='POST':
         employee_data=JSONParser().parse(request)
         employees_serializer=EmployeeSerializer(data=employee_data)
@@ -22,6 +23,7 @@ def employeeApi(request,id=0):
             employees_serializer.save()
             return JsonResponse("Added Successfully",safe=False)
         return JsonResponse("Failed to Add",safe=False)
+    
     elif request.method=='PUT':
         employee_data=JSONParser().parse(request)
         employee=Employees.objects.get(EmployeeId=employee_data['EmployeeId'])
@@ -30,6 +32,7 @@ def employeeApi(request,id=0):
             employees_serializer.save()
             return JsonResponse("Updated Successfully",safe=False)
         return JsonResponse("Failed to Update")
+    
     elif request.method=='DELETE':
         employee=Employees.objects.get(EmployeeId=id)
         employee.delete()
