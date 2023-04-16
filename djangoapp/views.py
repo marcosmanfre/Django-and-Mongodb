@@ -37,3 +37,4 @@ def employeeApi(request,id=0):
         employee=Employees.objects.get(EmployeeId=id)
         employee.delete()
         return JsonResponse("Deletado com sucesso",safe=False)
+    
