@@ -1,6 +1,6 @@
 # Django-and-Mongodb
  
-API Django integrado com MongoDB
+MongoDB + Django Rest Framework CRUD Rest API
 
 ### 📋 Pré-requisitos
 
