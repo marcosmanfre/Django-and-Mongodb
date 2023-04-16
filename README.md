@@ -42,4 +42,4 @@ Conexão com o banco de dados NoSQL MongoDB Atlas https://cloud.mongodb.com/
 
 
 
-Desenvolvido por [Marcos Manfré](https://github.com/marcosmanfre) 
+Desenvolvido por [Marcos Manfré](https://www.linkedin.com/in/marcosmanfre/) 
