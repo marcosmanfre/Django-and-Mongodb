@@ -2,6 +2,8 @@
  
 MongoDB + Django Rest Framework CRUD Rest API
 
+Cadastro de funcionários utilizando Django e MongoDB.
+
 ### 📋 Pré-requisitos
 
 * [Python 3.10]
